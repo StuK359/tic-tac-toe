@@ -4,6 +4,12 @@ const playerColor = {
     '-1': 'red',
     'null': 'lightgreen'
   };
+
+  const playerSymbol = {
+      '1': 'X',
+      '-1': 'O',
+      'null': ''
+  };
   
   const winStates = [
       [0, 1, 2],
@@ -57,6 +63,7 @@ const playerColor = {
   function render() {
      board.forEach(function(sq, idx) {
         squares[idx].style.background = playerColor[sq];
+        squares[idx].innerHTML = playerSymbol[sq];
       });
       if (winner === 'T') {
         message.innerHTML = 'Tie Game!';

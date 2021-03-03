@@ -22,17 +22,20 @@ html, body {
   }
   
   td {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   
   td div {
     margin: 0 auto;
     height: 50px;
     width: 50px;
+    padding-left: 10px;
     border-radius: 50%;
     pointer-events: none;
-  
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
   }
   
   tr td {
